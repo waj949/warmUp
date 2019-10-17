@@ -6,4 +6,4 @@ console.log(z);
 
 // 2-calculate the area of a square using varaiables.
 var a;
-var area = a * a;
+var area = a * a; 
