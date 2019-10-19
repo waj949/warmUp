@@ -13,6 +13,7 @@ function middel(array){
 	return array[index]
 }
 
+<<<<<<< HEAD
 // 3-Change all the numbers in the array to be multiplied by two for even indexes. 
 function change(array){
 	return array.map(function(val, index){
@@ -25,3 +26,6 @@ function change(array){
 var array =[1,2,3,4,6,7,8];
  change(array)
  // I used the map method in the array object wich iterate over the array and chek if the index of the element is even ==> multiplie by 2 or just returned it as it is
+=======
+// 3-Change all the numbers in the array to be multiplied by two for even indexes.
+>>>>>>> 5351c491bef905428a1af3ea57f32fb6874d8e38
