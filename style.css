@@ -1,0 +1,11 @@
+body {
+	background-color: blue;
+}
+#mono{
+	font-family: monospace;
+}
+#ser{
+	font-family: serif;
+	text-decoration: underline;
+}
+
