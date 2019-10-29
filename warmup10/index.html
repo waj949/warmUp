@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<textarea> </textarea>
+	
+	<button id="submit">Submit</button>
+	
+	<ul></ul>
+	
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	//$('body').css('background-color', 'grey')
+  	var jQ = function(){
+  		var txt = $('textarea').text()
+  		// selecting the text from text area
+  		$('ul').append('<li>' + txt + '</li>');
+  		// appending the li with the txt inside of it
+  		$('<li>').html('innerText', txt)
+  		// add the classes 
+  		$('<li>').attr('class', 'class')
+  	}
+  </script>
+</body>
+</html>
