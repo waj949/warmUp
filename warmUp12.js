@@ -44,7 +44,7 @@ Technical Details
         for(let j = 0; j < arr1.length; j++){
             // looping threw arr1 checking of the range condition and updating array 
             var n2 = Number(arr1[j]);
-            if(n2 +n2 < 100 && n1 + n2 > 0){
+            if(n1 +n2 < 100 && n1 + n2 > 0){
                 array[i] = n1 + n2
             }
         }
