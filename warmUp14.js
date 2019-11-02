@@ -19,5 +19,19 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 */
 
 var maxProfit = function(prices) {
-  // YOUR CODE HERE
+  // this array will hold all of the differences between prices[i] and the rest of the prices array
+  var arr = [] 		
+  //looping and fixing prices[i] .. make prices[i] - prices[j] .... and push them to arr		
+  for(let i=0; i < prices.length; i++){
+  		for(let j = i + 1; j < prices.length; j++)
+  			arr.push(prices[i] - prices[j])
+  }
+  // arr will hold the opposites profites we need so we look for the minimum
+  var p = Math.min(...arr);
+  //if all the differnces are positives so there is no profits 
+  if(p < 0){
+  return 'Maximum profit is ' + Number(-p); // return -p 
+  }
+  return 'Maximum profit is 0' ;
+
 };
