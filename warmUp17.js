@@ -27,6 +27,27 @@
 
 // ​
 // ​
-// var calculateTime = function(keyboard, word) {
+ var calculateTime = function(keyboard, word) {
     
-// };
+    function findIndex(key, char ){
+    	for(let i=0; i < key.length; i++){
+    		if(key[i] === char){
+    			return i;
+    		};
+    	};
+    };
+
+    var firstIndex = findIndex(keyboard, word[0])
+	 var acc = firstIndex;
+    console.log(firstIndex);
+    for(let j = 1; j < keyboard.length -1; j++){
+    	var a = findIndex(keyboard, word[j]);
+		var diff = Math.abs( a - firstIndex);
+		
+    	//console.log('diff', diff);
+    	acc  += diff;
+    	//console.log('acc', acc);
+    	firstIndex = findIndex(keyboard, word[j]);	
+    }
+    return acc;
+ };
