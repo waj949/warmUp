@@ -10,3 +10,27 @@
 
 // input   =  "aaaaaaaaaaaa"
 // result  =  "123456789101112"
+
+// number of accurence of each charachter 
+
+function occurnece(str){
+	var result ='' ;
+	var acc;
+	for(var i =0; i < str.length; i++){
+	    acc = 1;
+	   for(var j = 0; j <= i-1; j++){
+	       if(str[i] === str[j]){
+	           ++acc;
+	       }
+	   }
+	    result += acc;
+	}
+    return result;
+}
+ 
+var input    =  "Hello, World!"
+// result  =  "1112111121311"
+
+//var input   =  "aaaaaaaaaaaa"
+// result  =  "123456789101112"
+occurnece(input)
